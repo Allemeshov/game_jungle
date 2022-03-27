@@ -1,0 +1,131 @@
+.game__pause__board {
+  width: 723px;
+  height: 60%;
+  background-image: url("../assets/images/pause__board.png");
+  background-size: 723px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template: auto auto / 1fr;
+  padding: 10vh 0 20px 0;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    width: 500px;
+    background-size: 500px 100%;
+    grid-template: auto auto / 1fr;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    background-size: 100% 100%;
+  }
+
+  &__close {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 3%;
+    right: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: all 0.2s;
+
+    :hover {
+      transform: scale(1);
+      transition: all 0.2s;
+    }
+
+    & > img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__title,
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    justify-content: center;
+
+    & > h3 {
+      color: #333333;
+      font-size: 80px;
+      text-align: center;
+      padding: 0 10%;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 60px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__buttons {
+    padding: 0 25%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+      padding: 60px 15% 0 15%;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 60px 10% 0 10%;
+    }
+
+    & > button:hover {
+      transform: scale(1);
+      transition: all 0.2s;
+    }
+  }
+}
+
+//
+//@media screen and (max-width: 1024px) {
+//  .game__pause__board {
+//    width: 500px;
+//    background-size: 500px 100%;
+//    grid-template: auto auto / 1fr;
+//  }
+//
+//  .game__pause__board__title > h3 {
+//    font-size: 60px;
+//  }
+//}
+//
+//@media screen and (max-width: 600px) {
+//  .game__pause__board {
+//    width: 80%;
+//    background-size: 100% 100%;
+//  }
+//
+//  .game__pause__board__title > h3 {
+//    font-size: 50px;
+//  }
+//
+//  .game__pause__board__buttons {
+//    padding: 60px 15% 0 15%;
+//  }
+//}
+//
+//
+//@media screen and (max-width: 400px) {
+//  .game__pause__board__title > h3 {
+//    font-size: 40px;
+//  }
+//
+//  .game__pause__board__buttons {
+//    padding: 60px 10% 0 10%;
+//  }
+//}
+

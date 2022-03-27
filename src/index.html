@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta
+            charset="UTF-8"
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Find pair</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<div class="app">
+    <audio class="music" loop="loop">
+        <source src="./assets/sounds/beat.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="sound">
+        <source src="./assets/sounds/sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="clouds">
+        <img
+                class="startSmallClouds"
+                src="./assets/images/game__smallClouds.png"
+                alt="Маленькие облака">
+        <img
+                class="startBigClouds"
+                src="./assets/images/game__bigClouds.png"
+                alt="Большие облака">
+    </div>
+    <div class="menu hide"></div>
+    <div class="game hide">
+        <img
+                class="game__smallClouds game__smallClouds1"
+                src="./assets/images/game__smallClouds.png"
+                alt="Маленькие облака">
+        <img
+                class="game__smallClouds game__smallClouds2"
+                src="./assets/images/game__smallClouds.png"
+                alt="Маленькие облака">
+
+        <img
+                class="game__bigClouds game__bigClouds1"
+                src="./assets/images/game__bigClouds.png"
+                alt="Большие облака">
+        <img
+                class="game__bigClouds game__bigClouds2"
+                src="./assets/images/game__bigClouds.png"
+                alt="Большие облака">
+
+        <div class="game__info showAnimation">
+            <div class="game__info__timer">
+                <h4 class="game__info__timer__time"></h4>
+            </div>
+            <button
+                    class="game__info__pause">
+                <img
+                        data-action="pause"
+                        src="./assets/images/game__pause.png"
+                        alt="Пауза">
+            </button>
+        </div>
+        <div class="game__board showAnimation"></div>
+        <div class="game__pause hide hide-popup">
+            <div class="game__pause__board">
+                <img
+                        class="popup__title"
+                        src="./assets/images/pause__title.png"
+                        alt="ПАУЗА">
+                <button class="popup__close">
+                    <img
+                            data-action="close"
+                            src="./assets/images/close.png"
+                            alt="Закрыть">
+                </button>
+                <div class="game__pause__board__title">
+                    <h3>ВЫПЕЙТЕ<br>ЧАШКУ ЧАЯ</h3>
+                </div>
+                <div class="game__pause__board__buttons">
+                    <button
+                            class="game__pause__board__buttons__resume">
+                        <img
+                                data-action="restart"
+                                src="./assets/images/resume.png"
+                                alt="Рестарт">
+                    </button>
+
+                    <button
+                            class="game__pause__board__buttons__menu">
+                        <img
+                                data-action="leave"
+                                src="./assets/images/to-menu.png"
+                                alt="Меню">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="game__win hide hide-popup">
+            <div class="game__win__board">
+                <img
+                        class="popup__title"
+                        src="./assets/images/win__title.png"
+                        alt="ПОБЕДА">
+                <div class="game__win__board__stars">
+                    <img
+                            class="game__win__board__stars__item"
+                            src="./assets/images/win__1star.png"
+                            alt="Stars">
+                </div>
+                <div>
+                    <h2 class="game__board__score__title">Твой счет</h2>
+                    <h3 class="game__board__score__amount"></h3>
+                </div>
+                <div>
+                    <h2 class="game__board__bestScore__title">Лучший счет</h2>
+                    <h3 class="game__board__bestScore__amount"></h3>
+                </div>
+                <div class="game__win__board__buttons">
+                    <button>
+                        <img
+                                data-action="restart"
+                                src="./assets/images/resume.png"
+                                alt="Заново">
+                    </button>
+                    <button>
+                        <img
+                                data-action="leave"
+                                src="./assets/images/to-menu.png"
+                                alt="В меню">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="game__lose hide hide-popup">
+            <div class="game__lose__board">
+                <img
+                        class="popup__title"
+                        src="./assets/images/lose__title.png"
+                        alt="ПОРАЖЕНИЕ">
+                <img
+                        class="game__lose__board__stars"
+                        src="./assets/images/lose__stars.png"
+                        alt="Звезды">
+                <div class="game__lose__board__buttons">
+                    <button>
+                        <img
+                                data-action="restart"
+                                src="./assets/images/resume.png"
+                                alt="Заново">
+                    </button>
+                    <button>
+                        <img
+                                data-action="leave"
+                                src="./assets/images/to-menu.png"
+                                alt="В меню">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="settings hide hide-popup"></div>
+    <div class="rating hide hide-popup"></div>
+</div>
+</body>
+</html>

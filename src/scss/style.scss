@@ -1,0 +1,21 @@
+@import "reset";
+@import "font";
+@import "app";
+
+body {
+  overflow: hidden;
+  background-color: #6dced5;
+
+  .hide {
+    display: none !important;
+  }
+
+  .hide-popup {
+    transform: translateY(-100vh);
+  }
+
+  @media screen and (max-width: 840px) {
+    cursor: pointer;
+  }
+
+}
